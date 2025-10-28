@@ -25,17 +25,17 @@
             axios.get(`${this.baseUrl}/posts`)
             .then(response => {
                 // this gets the data, which is an array
-                this.posts = response.data
+                this.post = response.data
                 console.log(response.data)
             })
             .catch(error => {
-                this.posts = [{ entry: 'There was an error: ' + error.message }]
+                this.post = [{ entry: 'There was an error: ' + error.message }]
             })
         },
         methods: {
             deletePost(id) {
                 // TODO: Complete the delete method
-                axios.get(`$(this.baseUrl)/deletePost`, {
+                axios.get(`${this.baseUrl}/deletePost`, {
                     params: {
                         id: id
                     }

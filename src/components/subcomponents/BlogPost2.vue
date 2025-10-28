@@ -23,6 +23,9 @@
     <div class="card-body">
         <h5 class="card-title"> {{ subject }}</h5>
         <p class="card-text">{{ entry }}</p>
+        <slot>
+    
+        </slot>
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>
